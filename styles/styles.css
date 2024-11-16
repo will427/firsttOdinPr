@@ -1,0 +1,69 @@
+*
+{
+    /*this asterisk is the universal selector*/
+}
+
+img 
+{
+    width: 1000px;
+}
+/*class selector*/
+.myTitle
+{
+
+}
+/*id selector*/
+#myTitletwo
+{
+
+}
+
+/*we can group different classes when they share equal declarations*/
+.myTitle, .anotherTitle
+{
+
+}
+
+/*
+we can chain seleectors too
+We have two elements with the subsection class that have some sort of unique styles, but what if we only want to apply a separate rule to the element that also has header as a second class? Well, we could chain both the class selectors together in our CSS like so 
+*/
+.subSection.header
+{
+
+}
+/*we can also combine selectors*/
+
+.subSection#preview
+{
+
+}
+
+
+/*we can also select from ancestors, children selectors. we must try to not use them that often since they could get confusing*/
+.ancestor .child
+{
+
+}
+/*color and background color*/
+
+p {
+    /* hex example: */
+    color: #1100ff;
+    background-color: yellow;
+}
+  
+p {
+    /* rgb example: */
+    color: rgb(100, 0, 127);
+}
+  
+p {
+    /* hsl example: */
+    color: hsl(15, 82%, 56%);
+    /*its best to choose different fonts at once*/
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
